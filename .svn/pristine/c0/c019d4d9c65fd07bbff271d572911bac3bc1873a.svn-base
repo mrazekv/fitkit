@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package>
+
+    <!--  Package description -->
+    <name>Rutiny pro obsluhu PicoCPU</name>
+    <author>Zdeněk Vašíček</author>
+    <revision>20110501</revision>
+    <description>Rutiny pro práci s procesorem Picoblaze</description>
+
+    <!--  C files -->
+    <mcu>
+       <file>picocpu.c</file>
+    </mcu>
+ 
+</package>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package>
+
+    <!--  Package description -->
+    <name>SPI komunikace</name>
+    <author>Zdeněk Vašíček</author>
+    <revision>20080901</revision>
+    <description>Řadič SPI a adresový dekodér sloužící ke komunikaci s mikrokontrolerem.</description>
+
+    <!--  VHDL files -->
+    <fpga>
+       <include>../../units/math/package.xml</include>
+       <file>spi_adc_entity.vhd</file>
+       <file>spi_adc.vhd</file>
+       <file>spi_adc_autoincr.vhd</file>
+       <file>spi_reg.vhd</file>
+       <file>spi_ctrl.vhd</file>
+    </fpga>
+ 
+</package>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package>
+
+    <!--  Package description -->
+    <name>Řadič klávesnice</name>
+    <author>Zdeněk Vašíček</author>
+    <revision>20080901</revision>
+    <description>Řadič maticové klávesnice.</description>
+
+    <!--  VHDL files -->
+    <fpga>
+       <file>keyboard_ctrl.vhd</file>
+       <file>keyboard_ctrl_high.vhd</file>
+    </fpga>
+ 
+</package>

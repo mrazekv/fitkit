@@ -1,0 +1,2 @@
+set -tmpdir build/fpga -xsthdpdir build/fpga
+run -ifn build/fpga/ucosii.prj -ifmt mixed -opt_mode SPEED -opt_level 1 -ofn build/fpga/ucosii.ngc -ofmt NGC -lso build/fpga/ucosii.lso -p xc3s50-4-pq208 -top fpga -rtlview yes

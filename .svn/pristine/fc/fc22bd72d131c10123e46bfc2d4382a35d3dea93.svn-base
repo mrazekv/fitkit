@@ -1,0 +1,94 @@
+V3 49
+FL D:/fitkit/FITkitSVN-recent6/apps/demo_msp/uCOSII/build/fpga/ucosii_config.vhd 2010/11/29.18:34:50 O.40d
+PH work/fpga_cfg 1308819267 \
+      FL D:/fitkit/FITkitSVN-recent6/apps/demo_msp/uCOSII/build/fpga/ucosii_config.vhd \
+      PB work/clkgen_cfg 1308819257
+PB work/fpga_cfg 1308819268 \
+      FL D:/fitkit/FITkitSVN-recent6/apps/demo_msp/uCOSII/build/fpga/ucosii_config.vhd \
+      PH work/fpga_cfg 1308819267
+FL D:/fitkit/FITkitSVN-recent6/apps/demo_msp/uCOSII/fpga/top_level.vhd 2010/11/06.22:12:42 O.40d
+AR work/tlv_bare_ifc/main 1308819273 \
+      FL D:/fitkit/FITkitSVN-recent6/apps/demo_msp/uCOSII/fpga/top_level.vhd \
+      EN work/tlv_bare_ifc 1308819266 PB ieee/std_logic_1164 1296775758 \
+      PB ieee/std_logic_arith 1296775759 PB ieee/STD_LOGIC_UNSIGNED 1296775760 \
+      CP SPI_adc CP keyboard_controller CP lcd_raw_controller
+FL D:/fitkit/FITkitSVN-recent6/fpga/chips/architecture_bare/arch_bare_ifc.vhd 2009/02/07.16:52:52 O.40d
+AR work/fpga/arch_bare_ifc 1308819276 \
+      FL D:/fitkit/FITkitSVN-recent6/fpga/chips/architecture_bare/arch_bare_ifc.vhd \
+      EN work/fpga 1308819261 CP work/clkgen CP SPI_ctrl CP tlv_bare_ifc \
+      PB work/clkgen_cfg 1308819257 PB work/fpga_cfg 1308819268
+FL D:/fitkit/FITkitSVN-recent6/fpga/chips/architecture_bare/tlv_bare_ifc.vhd 2009/02/07.16:52:52 O.40d
+EN work/tlv_bare_ifc 1308819266 \
+      FL D:/fitkit/FITkitSVN-recent6/fpga/chips/architecture_bare/tlv_bare_ifc.vhd \
+      PB ieee/std_logic_1164 1296775758
+FL D:/fitkit/FITkitSVN-recent6/fpga/chips/fpga_xc3s50.vhd 2009/02/07.16:52:52 O.40d
+EN work/fpga 1308819261 FL D:/fitkit/FITkitSVN-recent6/fpga/chips/fpga_xc3s50.vhd \
+      PB ieee/std_logic_1164 1296775758
+FL D:/fitkit/FITkitSVN-recent6/fpga/ctrls/keyboard/keyboard_ctrl.vhd 2009/02/07.16:52:52 O.40d
+EN work/keyboard_controller 1308819269 \
+      FL D:/fitkit/FITkitSVN-recent6/fpga/ctrls/keyboard/keyboard_ctrl.vhd \
+      PB ieee/std_logic_1164 1296775758 PB ieee/std_logic_arith 1296775759 \
+      PB ieee/STD_LOGIC_UNSIGNED 1296775760
+AR work/keyboard_controller/arch_keyboard 1308819270 \
+      FL D:/fitkit/FITkitSVN-recent6/fpga/ctrls/keyboard/keyboard_ctrl.vhd \
+      EN work/keyboard_controller 1308819269
+FL D:/fitkit/FITkitSVN-recent6/fpga/ctrls/keyboard/keyboard_ctrl_high.vhd 2009/02/07.16:52:52 O.40d
+EN work/keyboard_controller_high 1308819274 \
+      FL D:/fitkit/FITkitSVN-recent6/fpga/ctrls/keyboard/keyboard_ctrl_high.vhd \
+      PB ieee/std_logic_1164 1296775758 PB ieee/std_logic_arith 1296775759 \
+      PB ieee/STD_LOGIC_UNSIGNED 1296775760
+AR work/keyboard_controller_high/behavioral 1308819275 \
+      FL D:/fitkit/FITkitSVN-recent6/fpga/ctrls/keyboard/keyboard_ctrl_high.vhd \
+      EN work/keyboard_controller_high 1308819274 CP work/keyboard_controller
+FL D:/fitkit/FITkitSVN-recent6/fpga/ctrls/lcd/lcd_raw.vhd 2009/02/08.20:17:12 O.40d
+EN work/lcd_raw_controller 1308819271 \
+      FL D:/fitkit/FITkitSVN-recent6/fpga/ctrls/lcd/lcd_raw.vhd \
+      PB ieee/std_logic_1164 1296775758 PB ieee/std_logic_arith 1296775759 \
+      PB ieee/STD_LOGIC_UNSIGNED 1296775760
+AR work/lcd_raw_controller/base 1308819272 \
+      FL D:/fitkit/FITkitSVN-recent6/fpga/ctrls/lcd/lcd_raw.vhd \
+      EN work/lcd_raw_controller 1308819271
+FL D:/fitkit/FITkitSVN-recent6/fpga/ctrls/spi/spi_adc.vhd 2009/02/07.16:52:52 O.40d
+AR work/SPI_adc/basic 1308819278 \
+      FL D:/fitkit/FITkitSVN-recent6/fpga/ctrls/spi/spi_adc.vhd EN work/SPI_adc 1308819258 \
+      PB ieee/std_logic_1164 1296775758 PB ieee/std_logic_arith 1296775759 \
+      PB ieee/STD_LOGIC_UNSIGNED 1296775760 PB work/math_pack 1308819260
+FL D:/fitkit/FITkitSVN-recent6/fpga/ctrls/spi/spi_adc_autoincr.vhd 2009/02/07.16:52:52 O.40d
+AR work/SPI_adc/autoincrement 1308819277 \
+      FL D:/fitkit/FITkitSVN-recent6/fpga/ctrls/spi/spi_adc_autoincr.vhd \
+      EN work/SPI_adc 1308819258 PB ieee/std_logic_1164 1296775758 \
+      PB ieee/std_logic_arith 1296775759 PB ieee/STD_LOGIC_UNSIGNED 1296775760 \
+      PB work/math_pack 1308819260
+FL D:/fitkit/FITkitSVN-recent6/fpga/ctrls/spi/spi_adc_entity.vhd 2009/02/07.16:52:52 O.40d
+EN work/SPI_adc 1308819258 \
+      FL D:/fitkit/FITkitSVN-recent6/fpga/ctrls/spi/spi_adc_entity.vhd \
+      PB ieee/std_logic_1164 1296775758
+FL D:/fitkit/FITkitSVN-recent6/fpga/ctrls/spi/spi_ctrl.vhd 2009/02/07.16:52:52 O.40d
+EN work/SPI_ctrl 1308819264 \
+      FL D:/fitkit/FITkitSVN-recent6/fpga/ctrls/spi/spi_ctrl.vhd \
+      PB ieee/std_logic_1164 1296775758 PB ieee/std_logic_arith 1296775759 \
+      PB ieee/STD_LOGIC_UNSIGNED 1296775760
+AR work/SPI_ctrl/Arch_SPI_ctrl2 1308819265 \
+      FL D:/fitkit/FITkitSVN-recent6/fpga/ctrls/spi/spi_ctrl.vhd EN work/SPI_ctrl 1308819264
+FL D:/fitkit/FITkitSVN-recent6/fpga/units/clkgen/clkgen.vhd 2009/02/07.16:52:52 O.40d
+EN work/clkgen 1308819262 \
+      FL D:/fitkit/FITkitSVN-recent6/fpga/units/clkgen/clkgen.vhd \
+      PB ieee/std_logic_1164 1296775758 PB ieee/NUMERIC_STD 1296775759 LB UNISIM \
+      PH unisim/VCOMPONENTS 1296775759 PB work/clkgen_cfg 1308819257
+AR work/clkgen/BEHAVIORAL 1308819263 \
+      FL D:/fitkit/FITkitSVN-recent6/fpga/units/clkgen/clkgen.vhd EN work/clkgen 1308819262 \
+      CP BUFG CP IBUFG CP DCM
+FL D:/fitkit/FITkitSVN-recent6/fpga/units/clkgen/clkgen_config.vhd 2009/02/07.16:52:52 O.40d
+PH work/clkgen_cfg 1308819256 \
+      FL D:/fitkit/FITkitSVN-recent6/fpga/units/clkgen/clkgen_config.vhd \
+      PB ieee/std_logic_1164 1296775758 PB ieee/std_logic_arith 1296775759
+PB work/clkgen_cfg 1308819257 \
+      FL D:/fitkit/FITkitSVN-recent6/fpga/units/clkgen/clkgen_config.vhd \
+      PH work/clkgen_cfg 1308819256
+FL D:/fitkit/FITkitSVN-recent6/fpga/units/math/math_pack.vhd 2009/02/07.16:52:52 O.40d
+PH work/math_pack 1308819259 \
+      FL D:/fitkit/FITkitSVN-recent6/fpga/units/math/math_pack.vhd \
+      PB ieee/std_logic_1164 1296775758
+PB work/math_pack 1308819260 \
+      FL D:/fitkit/FITkitSVN-recent6/fpga/units/math/math_pack.vhd \
+      PH work/math_pack 1308819259

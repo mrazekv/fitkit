@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package>
+
+    <!--  Package description -->
+    <name>VMON</name>
+    <author>Zdenìk Vašíèek</author>
+    <revision>20110501</revision>
+    <description></description>
+
+    <!--  VHDL files -->
+    <fpga>
+ 	<file>or_tree.vhd</file>
+  	<file>irq.vhd</file>
+  	<file>ftdispi.vhd</file>
+        <file>vmon.vhd</file>
+    </fpga>
+ 
+</package>

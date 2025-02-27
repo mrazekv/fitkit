@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<document OS="nt" product="ISE" version="13.1">
+
+  <!--The data in this file is primarily intended for consumption by Xilinx tools.
+    The structure and the elements are likely to change over the next few releases.
+    This means code written to parse this file will need to be revisited each subsequent release.-->
+
+  <application stringID="NgdBuild" timeStamp="Thu Jun 23 10:54:32 2011">
+    <section stringID="User_Env">
+      <table stringID="User_EnvVar">
+        <column stringID="variable"/>
+        <column stringID="value"/>
+        <row stringID="row" value="0">
+          <item stringID="variable" value="LMC_HOME"/>
+          <item stringID="value" value="Q:\fitkit\XilinxISE\smartmodel\nt\installed_nt"/>
+        </row>
+        <row stringID="row" value="1">
+          <item stringID="variable" value="PATH"/>
+          <item stringID="value" value="Q:\fitkit\XilinxISE\ISE\\lib\nt;Q:\fitkit\XilinxISE\ISE\\bin\nt;C:\PROGRA~1\Borland\CBUILD~1C;\PROGRA~1\Borland\CBUILD~1\Projects\Bpl;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32\WBEM;C:\WINDOWS\system32\nls;C:\WINDOWS\system32\nls\english;c:\mspgcc\bin;C:\Xilinx92i\bin\nt;C:\Program Files\Microsoft SQL Server\90\Tools\binn\;C:\Program Files\doxygen\bin;C:\Program Files\Graphviz2.18\Bin;C:\Program Files\Borland\CBuilder6\lib\SDL\C6;C:\Program Files\QuickTime\QTSystem\;C:\Program Files\TortoiseSVN\bin;C:\Program Files\FITkit\bin;C:\WINDOWS\system32\WindowsPowerShell\v1.0;d:\mspgcc\bin;Q:\fitkit\QDevKit\bin;Q:\fitkit\mspgcc\bin;Q:\fitkit\Modelsim\win32;Q:\fitkit\XilinxISE\ISE\bin\nt;Q:\fitkit\XilinxISE\common\bin\nt;Q:\fitkit\XilinxISE\PlanAhead\bin;Q:\fitkit\Precision\Mgc_home\bin;Q:\fitkit\CatapultC\Mgc_home\bin;C:\Program;Z:."/>
+        </row>
+        <row stringID="row" value="2">
+          <item stringID="variable" value="PATHEXT"/>
+          <item stringID="value" value=".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.PSC1;.PSC1"/>
+        </row>
+        <row stringID="row" value="3">
+          <item stringID="variable" value="XILINX_DSP"/>
+          <item stringID="value" value="Q:\fitkit\XilinxISE\DSP_Tools\nt"/>
+        </row>
+        <row stringID="row" value="4">
+          <item stringID="variable" value="XILINX_PLANAHEAD"/>
+          <item stringID="value" value="Q:\fitkit\XilinxISE\PlanAhead"/>
+        </row>
+        <row stringID="row" value="5">
+          <item stringID="variable" value="XILINX"/>
+          <item stringID="value" value="Q:\fitkit\XilinxISE\ISE\"/>
+        </row>
+        <row stringID="row" value="6">
+          <item stringID="variable" value="XILINXD_LICENSE_FILE"/>
+          <item stringID="value" value="2100@semik.fit.vutbr.cz"/>
+        </row>
+      </table>
+      <item stringID="User_EnvOs" value="OS Information">
+        <item stringID="User_EnvOsname" value="Microsoft Windows XP Professional"/>
+        <item stringID="User_EnvOsrelease" value="Service Pack 3  (build 2600)"/>
+      </item>
+      <item stringID="User_EnvHost" value="PCSTRNADEL"/>
+      <table stringID="User_EnvCpu">
+        <column stringID="arch"/>
+        <column stringID="speed"/>
+        <row stringID="row" value="0">
+          <item stringID="arch" value="Intel(R) Core(TM)2 Duo CPU     E6550  @ 2.33GHz"/>
+          <item stringID="speed" value="2372 MHz"/>
+        </row>
+      </table>
+    </section>
+    <task stringID="NGDBUILD_OPTION_SUMMARY">
+      <section stringID="NGDBUILD_OPTION_SUMMARY">
+        <item DEFAULT="None" label="-uc" stringID="NGDBUILD_ucf_file" value="../../..//fpga/chips/fpga_xc3s50.ucf"/>
+      </section>
+    </task>
+    <task stringID="NGDBUILD_REPORT">
+      <section stringID="NGDBUILD_DESIGN_SUMMARY">
+        <item dataType="int" stringID="NGDBUILD_NUM_ERRORS" value="0"/>
+        <item dataType="int" stringID="NGDBUILD_FILTERED_WARNINGS" value="0"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_WARNINGS" value="1"/>
+        <item dataType="int" stringID="NGDBUILD_FILTERED_INFOS" value="0"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_INFOS" value="1"/>
+      </section>
+      <section stringID="NGDBUILD_PRE_UNISIM_SUMMARY">
+        <item dataType="int" stringID="NGDBUILD_NUM_BUFG" value="1"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_DCM" value="1"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FDC" value="22"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FDCE" value="71"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FDP" value="3"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FDPE" value="1"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_GND" value="1"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_IBUF" value="7"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_IBUFG" value="1"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_INV" value="10"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_IOBUF" value="1"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT1" value="14"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT2" value="26"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT2_L" value="1"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT3" value="8"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT3_D" value="2"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT4" value="34"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT4_D" value="2"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT4_L" value="3"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_MUXCY" value="14"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_MUXF5" value="1"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_OBUF" value="79"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_OBUFT" value="32"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_VCC" value="1"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_XORCY" value="15"/>
+      </section>
+      <section stringID="NGDBUILD_POST_UNISIM_SUMMARY">
+        <item dataType="int" stringID="NGDBUILD_NUM_BUFG" value="1"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_DCM" value="1"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FDC" value="22"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FDCE" value="71"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FDP" value="3"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_FDPE" value="1"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_GND" value="1"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_IBUF" value="12"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_IBUFG" value="1"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_INV" value="10"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT1" value="14"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT2" value="26"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT2_L" value="1"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT3" value="8"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT3_D" value="2"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT4" value="34"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT4_D" value="2"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_LUT4_L" value="3"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_MUXCY" value="14"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_MUXF5" value="1"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_OBUF" value="79"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_OBUFT" value="33"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_PULLUP" value="5"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_VCC" value="1"/>
+        <item dataType="int" stringID="NGDBUILD_NUM_XORCY" value="15"/>
+      </section>
+      <section stringID="NGDBUILD_CORE_GENERATION_SUMMARY">
+        <section stringID="NGDBUILD_CORE_INSTANCES"/>
+      </section>
+    </task>
+  </application>
+
+</document>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project outputprefix="gfx">
+
+    <!--  Project description -->
+    <name>3D MCU engine</name>
+    <author>Josef Strnadel</author>
+    <revision>20090201</revision>
+    <description>Aplikace demonstruje moznosti tvorby vektorovych objektu ve 3D a 
+vykreslovani 3D sceny v rezimech wireframe (drateny model) /solid (vyplnene plochy) 
+pomoci rasterizeru trojuhelniku implementovaneho v FPGA. K dispozici jsou funkce 
+pro transformace vrcholu, hran, povrchu, objektu a sceny.    
+    </description>
+
+    <!--  MCU part -->
+    <mcu mathlibrary="yes">
+       <file>utils.c</file>
+       <file>render3d.c</file>
+       <file>transf3d.c</file>
+       <file>vga.c</file>
+       <file>main.c</file>
+    </mcu>
+
+    <!-- FPGA part -->
+    <fpga dcmfrequency="50MHz" architecture="pc">
+        <include>fpga/ctrls/spi/package.xml</include>
+        <include>fpga/ctrls/vga/package.xml</include>
+        <include>fpga/ctrls/sdram/package.xml</include>
+        <include>fpga/units/rasterizer/triangle/package.xml</include>
+        <include>fpga/units/fifo/package.xml</include>
+        
+        <file>top_level.vhd</file>
+    </fpga>
+
+</project>

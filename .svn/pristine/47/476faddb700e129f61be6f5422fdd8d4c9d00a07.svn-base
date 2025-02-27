@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package>
+
+    <!--  Package description -->
+    <name>Řadič TLV320AIC23B.</name>
+    <author>Karel Slaný</author>
+    <revision>20091014</revision>
+    <description>Řadič audio kodeku pro DSP režim. Kruhový buffer využívající BRAM.</description>
+
+    <!--  VHDL files -->
+    <fpga>
+       <file>aic23b_dsp_read.vhd</file>
+       <file>aic23b_dsp_write.vhd</file>
+       <file>aic23b_dsp_ringbuffer.vhd</file>
+    </fpga>
+ 
+</package>

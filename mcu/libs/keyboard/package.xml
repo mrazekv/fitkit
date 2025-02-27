@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package>
+
+    <!--  Package description -->
+    <name>Klávesnice</name>
+    <author>Jan Markovič</author>
+    <revision>20080901</revision>
+    <description>Rutiny pro práci s klávesnicí</description>
+
+    <!--  C files -->
+    <mcu>
+       <file>keyboard.c</file>
+    </mcu>
+ 
+</package>

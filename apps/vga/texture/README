@@ -1,0 +1,28 @@
+Aplikace: VGA - zobrazování textur
+Popis: Aplikace demonstruje jednoduché zobrazení texturovaného podkladu tøemi
+       typy textur s možností pohybu ètvrtým obrázkem pomocí klávesnice.
+       Textury se naèítají z flash pamìti FITkitu do blokové RAM ve FPGA,
+       odkud probíhá zobrazování. Další informace viz webove stranky
+       FITkitu (aplikace VGA - zobrazování textur).
+
+Zprovozneni:
+ 1. prelozit aplikaci
+    fcmake
+    make pripadne gmake
+
+ 2. propojit propojku J6 v pripade, ze propojena neni
+
+ 3. naprogramovat MCU a FPGA
+    make load
+
+
+Pouziti:
+   V terminalovem programu zadejte prikaz HELP
+   Tento prikaz vypise seznam dostupnych funkci.
+   K pohybu obrazku slouzi klavesy 2, 4, 5 a 6 na klavesnici FITkitu. 
+
+
+Prehled prikazu:
+  FLASH W TEX - inicializuje odesilani souboru s texturami do pameti flash
+  FLASH W MASK - inicializuje odesilani souboru s maskou pozaci do pameti flash
+  UPDATE TEX - aktualizuje program pro PicoBlaze v FPGA z pameti flash

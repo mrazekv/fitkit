@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package>
+
+    <!--  Package description -->
+    <name>uC/OS-II procesorovì specifické soubory</name>
+    <author>Karel Koranda, Vladimír Brù¾ek, Tomá¹ Jílek</author>
+    <revision>20101126</revision>
+    <description>uC/OS-II procesorovì specifické soubory pro MSP430F168 a MSP430F2617</description>
+
+    <!--  C files -->
+    <mcu>
+       <headerfile>os_cfg.h</headerfile>
+       <headerfile>os_cpu.h</headerfile>
+       <headerfile>os_cpu_a.h</headerfile>
+       <file>os_cpu_c.c</file>
+       <file>os_cpu_a.s</file>
+    </mcu>
+ 
+</package>

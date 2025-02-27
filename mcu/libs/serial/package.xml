@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package>
+
+    <!--  Package description -->
+    <name>Seriová komunikace</name>
+    <author>Zdeněk Vašíček</author>
+    <revision>20080901</revision>
+    <description>Rutiny pro práci s UART řadičem</description>
+
+    <!--  C files -->
+    <mcu>
+       <file>fpga_rs232.c</file>
+    </mcu>
+ 
+</package>

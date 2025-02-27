@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<project outputprefix="serial_echo">
+
+    <!--  Project description -->
+    <name>Seriová linka v FPGA (echo)</name>
+    <author>Zdeněk Vašíček</author>
+    <authoremail>vasicek@fit.vutbr.cz </authoremail>
+    <revision>20090404</revision>
+    <description>Komunikace mezi PC (přes kanál A obvodu FTDI) a řadičem seriové linky v FPGA (USB-UART).</description>
+
+    <!--  MCU part -->
+    <mcu>
+        <include>mcu/libs/irq/package.xml</include>
+        <file>main.c</file>
+    </mcu>
+
+    <!-- FPGA part -->
+    <fpga architecture="bare">
+        <include>fpga/ctrls/irq/package.xml</include>	    
+	<include>fpga/ctrls/serial/package.xml</include>
+	<file>clk_sync.vhd</file>
+        <file>top.vhd</file>
+    </fpga>
+
+</project>

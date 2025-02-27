@@ -1,0 +1,7 @@
+INFILE=D:\fitkit\FITkitSVN-recent6\apps\demo_msp\uCOSII\build\fpga\ucosii.par.ncd
+OUTFILE=D:\fitkit\FITkitSVN-recent6\apps\demo_msp\uCOSII\build\ucosii.bit
+FAMILY=Spartan3
+PART=xc3s50-4pq208
+WORKINGDIR=D:\fitkit\FITkitSVN-recent6\apps\demo_msp\uCOSII\build
+LICENSE=ISE
+USER_INFO=174678435_176159374_202678222_464

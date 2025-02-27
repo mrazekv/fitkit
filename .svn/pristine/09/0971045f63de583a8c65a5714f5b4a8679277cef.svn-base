@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project outputprefix="bram">
+
+    <!--  Project description -->
+    <name>Využití paměti BRAM</name>
+    <author>Zdeněk Vašíček</author>
+    <authoremail>vasicek@fit.vutbr.cz</authoremail>
+    <revision>20090201</revision>
+    <description>Aplikace demonstrující využití blokové paměti uvnitř FPGA</description>
+
+    <!--  MCU part -->
+    <mcu>
+        <file>main.c</file>
+    </mcu>
+
+    <!-- FPGA part -->
+    <fpga>
+        <file>top_level.vhd</file>
+    </fpga>
+
+</project>

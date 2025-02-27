@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package>
+
+    <!--  Package description -->
+    <name>IDE kontroler (DMA)</name>
+    <author>Stanislav Sigmund</author>
+    <revision>20091505</revision>
+
+    <!--  VHDL files -->
+    <fpga>
+       <file>ide_port.vhd</file>
+       <file>ide_dma_ctrl.vhd</file>
+    </fpga>
+ 
+</package>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package>
+
+    <!--  Package description -->
+    <name>Rasterizace úsečky</name>
+    <author>Ladislav Čapka</author>
+    <revision>20080901</revision>
+
+    <!--  VHDL files -->
+    <fpga>
+       <file>abssub.vhd</file>
+       <file>rasterizer.vhd</file>
+    </fpga>
+ 
+</package>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package>
+
+    <!--  Package description -->
+    <name>Matematické funkce</name>
+    <author>Zdeněk Vašíček</author>
+    <revision>20080901</revision>
+
+    <!--  VHDL files -->
+    <fpga>
+       <file>math_pack.vhd</file>
+    </fpga>
+ 
+</package>

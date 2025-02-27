@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package>
+
+    <!--  Package description -->
+    <name>Soubory jádra uC/OS-II</name>
+    <author>Karel Koranda, Vladimír Brù¾ek, Tomá¹ Jílek</author>
+    <revision>20101126</revision>
+    <description>Soubory jádra uC/OS-II</description>
+
+    <!--  C files -->
+    <mcu>
+       <headerfile>ucos_ii.h</headerfile>
+       <file>os_core.c</file>
+       <file>os_flag.c</file>
+       <file>os_mbox.c</file>
+       <file>os_mem.c</file>
+       <file>os_mutex.c</file>
+       <file>os_q.c</file>
+       <file>os_sem.c</file>
+       <file>os_task.c</file>
+       <file>os_time.c</file>
+       <file>os_tmr.c</file>
+    </mcu>
+ 
+</package>

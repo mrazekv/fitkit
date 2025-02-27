@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package>
+
+    <!--  Package description -->
+    <name>VGA řadič</name>
+    <author>Ladislav Čapka</author>
+    <revision>20080901</revision>
+    <description>Parametrizovatelný řadič slouží ke generování video signálu pro monitor s VGA vstupem.</description>
+
+    <!--  VHDL files -->
+    <fpga>
+       <file>vga_config.vhd</file>
+       <file>vga_ctrl.vhd</file>
+    </fpga>
+ 
+</package>

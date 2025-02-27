@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package>
+
+    <!--  Package description -->
+    <name>Základní top-level entita tlv_bare_ifc</name>
+    <author>Zdeněk Vašíček</author>
+    <revision>20080901</revision>
+
+    <!--  VHDL files -->
+    <fpga>
+       <include>../../units/clkgen/package.xml</include>
+       <include>../../ctrls/spi/package.xml</include>
+       <file>../fpga_xc3s50.vhd</file>
+       <file>arch_bare_ifc.vhd</file>
+       <file>tlv_bare_ifc.vhd</file>
+    </fpga>
+ 
+</package>

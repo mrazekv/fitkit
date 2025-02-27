@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package>
+    
+    <name>RTOS package for MSP430 target</name>
+    <author>Zdenek Vasicek</author>
+    <revision>20090501</revision>
+    <description>Jednoduchy real-time operacni system pro mikrokontroler MSP430</description>
+
+    <mcu>
+       <!-- RTOS - common files -->
+       <file>tasks.c</file>
+       <file>list.c</file>
+       <file>queue.c</file>
+
+       <!-- RTOS - MSP430 target -->
+       <file>portable/memory/heap_2.c</file>
+       <file>portable/msp430/port.c</file>
+
+       <!-- RTOS - configuration -->
+		 <headerfile>include/FreeRTOS.h</headerfile>
+       <headerfile location="project">FreeRTOSConfig.h</headerfile>
+
+		 <headerfile>include/projdefs.h</headerfile>
+		 <headerfile>include/portable.h</headerfile>
+  		 <headerfile>portable/msp430/portmacro.h</headerfile>
+		 <headerfile>include/task.h</headerfile>
+		 <headerfile>include/list.h</headerfile>
+		 <headerfile>include/croutine.h</headerfile>
+		 <headerfile>include/queue.h</headerfile>
+    </mcu>
+ 
+</package>

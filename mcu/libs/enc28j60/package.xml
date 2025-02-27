@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package>
+
+    <!--  Package description -->
+    <name>TCP/IP stack</name>
+    <author>Martin Musil</author>
+    <revision>20100516</revision>
+    <description></description>
+
+    <!--  C files -->
+    <mcu>
+	<file>enc28j60_dhcp.c</file>
+	<file>enc28j60_tcp.c</file>
+	<file>enc28j60_tcp_fsm.c</file>
+	<file>enc28j60_udp.c</file>
+	<file>enc28j60_icmp.c</file>
+	<file>enc28j60_ip.c</file>
+	<file>enc28j60_arp.c</file>
+        <file>enc28j60_eth.c</file>
+        <file>enc28j60_spi.c</file>
+	<file>enc28j60_spi_rx.c</file>
+	<file>enc28j60_spi_tx.c</file>
+        <file>fspi.c</file>
+	<file>enc28j60_string.c</file>
+    </mcu>
+ 
+</package>

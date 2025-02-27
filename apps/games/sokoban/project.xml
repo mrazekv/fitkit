@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="windows-1250"?>
+<project fitkitversion="1.0" outputprefix="sokoban">
+
+	<!--  Project description -->
+	<name>Hra Sokoban</name>
+	<author>Jiří Šubr</author>
+	<authoremail>xsubrj00@stud.fit.vutbr.cz</authoremail>
+	<revision>20090506</revision>
+        <description>Logická hra Sokoban. Úkolem hry je přesunout bedny na vyznačená místa na mapě.</description>
+
+
+    <!--  MCU part --> 
+	<mcu>
+        <include>mcu/libs/lcd/package.xml</include>
+        <include>mcu/libs/keyboard/package.xml</include>
+
+		<file>sokoban.c</file>
+		<file>font_texture.c</file>
+		<files>main.c</files>
+	</mcu>
+
+	<!-- FPGA part -->
+	<fpga architecture="pc">
+        <include>fpga/ctrls/spi/package.xml</include>
+        <include>fpga/ctrls/vga/package.xml</include>
+        <include>fpga/ctrls/lcd/package.xml</include>
+        <include>fpga/ctrls/keyboard/package.xml</include>
+		
+        <file>sokoban_top.vhd</file>
+	</fpga>
+
+</project>

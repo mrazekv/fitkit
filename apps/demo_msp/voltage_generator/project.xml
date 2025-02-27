@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project outputprefix="voltage_generator">
+
+    <!--  Project description -->
+    <name>Generátor ss napětí se zvolenou hodnotou</name>
+    <author>Josef Strnadel</author>
+    <authoremail>strnadel@fit.vutbr.cz</authoremail>
+    <revision>20090417</revision>
+    <description>
+			Pomocí DA převodníku dostupného na mikrokontroléru aplikace umožňuje generovat ss napětí o zvolené hodnotě.
+		</description>
+ 
+    <!--  MCU part -->
+    <mcu>
+        <include>mcu/libs/lcd/package.xml</include>
+        <file>main.c</file>
+    </mcu>
+
+    <!-- FPGA part -->
+    <fpga use="apps/demo/display/project.xml" />
+    
+</project>
+

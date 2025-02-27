@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project outputprefix="audio">
+
+    <!--  Project description -->
+    <name>TVL320AIC23B - ring buffer v MCU</name>
+    <author>Karel Slany</author>
+    <authoremail>slany@fit.vutbr.cz</authoremail>
+    <revision>20091014</revision>
+    <description></description>
+ 
+    <!--  MCU part -->
+    <mcu>
+        <include>mcu/libs/codec/package.xml</include>
+        <file>fspi.c</file>
+        <file>main.c</file>
+    </mcu>
+
+    <!-- FPGA part -->
+    <fpga dcmfrequency="75MHz">
+        <include>fpga/ctrls/audio/package.xml</include>
+        <file>spi_controller.vhd</file>
+        <file>top.vhd</file>
+    </fpga>
+
+
+</project>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project outputprefix="kb">
+
+    <!--  Project description -->
+    <name>Demo - klávesnice</name>
+    <category>Demo aplikace</category>
+    <author>Jan Markovič</author>
+    <authoremail>xmarko04@stud.fit.vutbr.cz </authoremail>
+    <revision>20090201</revision>
+    <description>Čtení stisknuté klávesy z klávesnice na FITKitu. Výsledek se zobrazí v terminálu</description>
+
+    <!--  MCU part -->
+    <mcu>
+        <include>mcu/libs/keyboard/package.xml</include>
+        <file>main.c</file>
+    </mcu>
+
+    <!-- FPGA part -->
+    <fpga>
+        <include>fpga/ctrls/keyboard/package.xml</include>
+        <file>top_level.vhd</file>
+    </fpga>
+
+</project>

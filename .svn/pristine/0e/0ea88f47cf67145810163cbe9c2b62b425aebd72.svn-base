@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project outputprefix="texture">
+
+    <!--  Project description -->
+    <name>Zobrazení textur</name>
+    <author>Ladislav Čapka</author>
+    <revision>20090201</revision>
+    <description>Aplikace umožňující zobrazit texturovaný podklad s třemi
+       typy textur s možností pohybu čtvrtým obrázkem pomocí klávesnice.
+       Textury se načítají z flash paměti FITkitu do blokové RAM ve FPGA,
+       odkud probíhá zobrazování.</description>
+
+    <!--  MCU part -->
+    <mcu>
+        <file>vga.c</file>
+        <file>main.c</file>
+    </mcu>
+
+    <!-- FPGA part -->
+    <fpga architecture="pc">
+        <include>fpga/ctrls/spi/package.xml</include>
+        <include>fpga/ctrls/keyboard/package.xml</include>
+        <include>fpga/ctrls/vga/package.xml</include>
+        <file>vga.vhd</file>
+    </fpga>
+
+</project>

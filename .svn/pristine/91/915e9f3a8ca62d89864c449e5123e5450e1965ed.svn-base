@@ -1,0 +1,12 @@
+vlib work
+vcom -explicit -93 random.vhd
+vcom -explicit -93 tb_random.vhd
+vsim -t 1ps -lib work testbench
+
+view wave
+
+add wave -noupdate -label CLK /testbench/clk
+add wave -noupdate -label RAND /testbench/random_num
+
+restart -f
+run 41 us

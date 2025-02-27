@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project outputprefix="moduleth">
+
+    <name>Překlad doménových jmen pomocí DNS</name>
+    <author>Martin Musil</author>
+    <authoremail>xmusil34@stud.fit.vutbr.cz</authoremail>
+    <description>
+    </description>
+ 
+    <!--  MCU part -->
+    <mcu>
+        <include>mcu/libs/enc28j60/package.xml</include>
+        <file>main.c</file>
+    </mcu>
+
+    <fpga use="../01_ping/project.xml" />
+
+</project>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project outputprefix="counter">
+
+    <!--  Project description -->
+    <name>Tutoriál - čítač</name>
+    <author>Jan Markovič</author>
+    <authoremail>xmarko04@stud.fit.vutbr.cz </authoremail>
+    <revision>20090201</revision>
+    <description>FPGA obsahuje čítač, který je možné ovládat pomocí terminálu. Stav čítače se zobrazuje na LCD displeji</description>
+
+    <!--  MCU part -->
+    <mcu>
+        <include>mcu/libs/lcd/package.xml</include>
+        <file>main.c</file>
+    </mcu>
+
+    <!-- FPGA part -->
+    <fpga>
+        <include>fpga/ctrls/lcd/package.xml</include>
+        <file>counter.vhd</file>
+        <file>top_level.vhd</file>
+    </fpga>
+
+</project>

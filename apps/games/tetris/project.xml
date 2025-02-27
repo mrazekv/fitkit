@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Izidor Matusov, xmatus19, source project.xml from snake/, changes cca 10% - my names -->
+<project fitkitversion="1.0" outputprefix="tetris">
+    <!--  Project description -->
+    <name>Tetris game</name>
+    <author>Izidor Matušov</author>
+    <authoremail>xmatus19@stud.fit.vutbr.cz</authoremail>
+    <revision>20101123</revision>
+    <description>Tetris-like game using FitKit's VGA port (Project for IMP course)</description>
+
+    <!--  MCU part --> 
+    <mcu>
+        <include>mcu/libs/keyboard/package.xml</include>
+        <include>mcu/libs/lcd/package.xml</include>
+        <include>mcu/libs/thermometer/package.xml</include>
+
+        <file>utils.c</file>
+        <file>main.c</file>
+        <file>tetris.c</file>
+    </mcu>
+
+    <!-- FPGA part -->
+    <fpga architecture="pc">
+        <include>fpga/ctrls/spi/package.xml</include>
+        <include>fpga/ctrls/vga/package.xml</include>
+        <include>fpga/ctrls/lcd/package.xml</include>
+        <include>fpga/ctrls/keyboard/package.xml</include>
+
+        <file>tetris_top.vhd</file>
+    </fpga>
+</project>

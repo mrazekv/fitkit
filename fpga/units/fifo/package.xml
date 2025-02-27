@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package>
+
+    <!--  Package description -->
+    <name>FIFO buffer</name>
+    <author>Ladislav Čapka</author>
+    <revision>20080901</revision>
+    <description></description>
+
+    <!--  VHDL files -->
+    <fpga>
+       <file>fifo36.vhd</file>
+    </fpga>
+ 
+</package>

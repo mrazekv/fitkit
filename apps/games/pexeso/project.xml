@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Vojtech Mrazek, xmraze06-->
+<project fitkitversion="1.0" outputprefix="pexeso">
+    <!--  Project description -->
+    <name>Pexeso</name>
+    <author>Vojtěch Mrázek</author>
+    <authoremail>xmraze06@stud.fit.vutbr.cz</authoremail>
+    <revision>20110414</revision>
+    <description>Jednoduchá hra Pexeso na VGA výstup. Je napsaná pouze v FPGA, bez použití MCU</description>
+
+    <!--  MCU part --> 
+    <mcu>
+        <file>main.c</file>
+    </mcu>
+
+    <!-- FPGA part -->
+    <fpga architecture="pc">
+        <include>fpga/ctrls/spi/package.xml</include>
+        <include>fpga/ctrls/vga/package.xml</include>
+        <include>fpga/ctrls/lcd/package.xml</include>
+        <include>fpga/ctrls/keyboard/package.xml</include>
+
+        <file>pexeso_top.vhd</file>
+        <file>symbol_decoder.vhd</file>
+        <file>symbol_ram.vhd</file>
+        <file>random.vhd</file>
+        <file>game_ctl.vhd</file>
+        <file>char_rom.vhd</file>
+        <file>bcd_cnt.vhd</file>
+    </fpga>
+</project>

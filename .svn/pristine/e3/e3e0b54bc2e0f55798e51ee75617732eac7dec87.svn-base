@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package>
+
+    <!--  Package description -->
+    <name>Top-level entita tlv_pc_ifc (DBG)</name>
+    <author>Zdeněk Vašíček</author>
+    <revision>20080901</revision>
+    <description>Entita zpřístupňující periferie PC, jedná se o rozhraní VGA, PS2 a RS232.
+       Pro aktivaci rozhraní je zapotřebí spojit propojku JP6.
+    </description>
+
+    <!--  VHDL files -->
+    <fpga>
+       <include>../../units/clkgen/package.xml</include>
+       <include>../../ctrls/spi/package.xml</include>
+       <include>../architecture_gp_dbg/vmon/package.xml</include>
+       <file>../fpga_xc3s50.vhd</file>
+       <file>arch_pc_ifc.vhd</file>
+       <file>tlv_pc_ifc.vhd</file>
+    </fpga>
+ 
+</package>

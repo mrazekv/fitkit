@@ -1,0 +1,16 @@
+Aplikace: Implementace 1-wire protokolu pro komunikaci s cidlem DS18B20.
+
+Popis: V aplikaci je implementovan protokol sbernice 1-wire, ktery je pouzit
+       pro komunikaci s teplotnim cidlem DS18B20. Merena teplota je zobrazena
+       na LCD displeji FITkitu.
+
+Zprovozneni:
+ 1. prelozit aplikaci
+    fcmake
+    make pripadne gmake
+
+ 2. pripojit DS18B20 k FITKitu
+    k prenosu dat slouzi pin 6 na konektoru JP9
+
+ 3. naprogramovat MCU a FPGA
+    make load

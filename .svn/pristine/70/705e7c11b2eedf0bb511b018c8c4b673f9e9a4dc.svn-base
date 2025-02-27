@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package>
+
+    <!--  Package description -->
+    <name>Řadič seriové komunikace</name>
+    <author>Zdeněk Vašíček</author>
+    <revision>20080901</revision>
+    <description>Parametrizovatelný řadič umožnující obousměrnou komunikaci po seriové lince.</description>
+
+    <!--  VHDL files -->
+    <fpga>
+       <file>serial_config.vhd</file>
+       <file>serial_clkgen.vhd</file>
+       <file>majority.vhd</file>
+       <file>serial_rx.vhd</file>
+       <file>serial_tx.vhd</file>
+       <file>serial.vhd</file>
+    </fpga>
+ 
+</package>

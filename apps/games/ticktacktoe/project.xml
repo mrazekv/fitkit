@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project fitkitversion="1.0" outputprefix="tttgame">
+
+	<!--  Project description -->
+	<name>Hra piškvorky</name>
+	<author>Zdeněk Vašíček</author>
+	<authoremail>vasicek@fit.vutbr.cz</authoremail>
+	<revision>20090201</revision>
+    <description>Piškvorky pro jeden/dva kity. Plocha je zobrazovana na monitoru pripojenemu k rozhrani VGA.</description>
+
+
+    <!--  MCU part --> 
+	<mcu>
+        <include>mcu/libs/lcd/package.xml</include>
+        <include>mcu/libs/thermometer/package.xml</include>
+        <include>mcu/libs/irq/package.xml</include>
+        <include>mcu/libs/serial/package.xml</include>
+
+		<file>ticktacktoe.c</file>
+		<files>main.c</files>
+	</mcu>
+
+	<!-- FPGA part -->
+	<fpga architecture="pc">
+        <include>fpga/ctrls/spi/package.xml</include>
+        <include>fpga/ctrls/vga/package.xml</include>
+        <include>fpga/ctrls/lcd/package.xml</include>
+        <include>fpga/ctrls/keyboard/package.xml</include>
+        <include>fpga/ctrls/serial/package.xml</include>
+        <include>fpga/ctrls/irq/package.xml</include>
+
+		<file>vga_game.vhd</file>
+	</fpga>
+
+</project>

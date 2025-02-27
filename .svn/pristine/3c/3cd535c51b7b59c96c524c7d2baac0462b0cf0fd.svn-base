@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project outputprefix="line">
+
+    <!--  Project description -->
+    <name>Rasterizace úseček</name>
+    <author>Ladislav Čapka</author>
+    <revision>20090201</revision>
+    <description></description>
+
+    <!--  MCU part -->
+    <mcu>
+        <file>main.c</file>
+    </mcu>
+
+    <!-- FPGA part -->
+    <fpga dcmfrequency="50MHz" architecture="pc">
+        <include>fpga/ctrls/spi/package.xml</include>
+        <include>fpga/ctrls/vga/package.xml</include>
+        <include>fpga/ctrls/sdram/package.xml</include>
+        <include>fpga/units/rasterizer/line/package.xml</include>
+        <include>fpga/units/fifo/package.xml</include>
+        
+        <file>top_level.vhd</file>
+    </fpga>
+
+</project>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project outputprefix="ps2">
+
+    <!--  Project description -->
+    <name>Obsluha PS/2 klávesnice</name>
+    <author>Pavel Bartoš</author>
+    <authoremail>xbarto41@stud.fit.vutbr.cz</authoremail>
+    <revision>20090201</revision>
+    <description>
+       Aplikace demonstruje využití knihovny umožňující komunikaci s PS/2 klávesnicí připojené ke konektoru JP3. 
+    </description>
+ 
+    <!--  MCU part -->
+    <mcu>
+        <include>mcu/libs/irq/package.xml</include>
+        <include>mcu/libs/ps2/package.xml</include>
+        <file>main.c</file>
+    </mcu>
+
+    <!-- FPGA part -->
+    <fpga use="apps/demo/ps2/project.xml" />
+
+</project>

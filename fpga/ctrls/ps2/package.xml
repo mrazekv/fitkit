@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package>
+
+    <!--  Package description -->
+    <name>Řadič PS/2</name>
+    <author>Zdeněk Vašíček</author>
+    <revision>20080901</revision>
+    <description>Řadič PS/2 rozhraní umožnující komunikaci s PS/2 myší a klávesnicí. 
+       V případě použití jednoduché redukce je možné komunikovat i s USB klávesnící/myší.
+    </description>
+
+    <!--  VHDL files -->
+    <fpga>
+       <file>ps2_entity.vhd</file>
+       <file>ps2full_ctrl.vhd</file>
+       <file>ps2half_ctrl.vhd</file>
+    </fpga>
+ 
+</package>

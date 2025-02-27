@@ -1,0 +1,12 @@
+Aplikace: Zobrazeni teploty cidla v MCU na displeji.
+
+Popis: Aplikace prebira hodnotu integrovaneho teplotniho cidla v AD prevodniku 
+       jednotky MCU, prepocita ji na teplotu a zobrazi na displeji.
+
+Zprovozneni:
+ 1. prelozit aplikaci
+    fcmake
+    make pripadne gmake
+
+ 2. naprogramovat MCU a FPGA
+    make load

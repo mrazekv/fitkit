@@ -1,0 +1,47 @@
+#Project setup
+#========================================
+#Test bench files (separated by space)
+set TBFILES "tb.vhd"
+set TIMESIM "no"
+
+#Compile project
+#========================================
+source "../../build/fpga/temp_sim.fdo"
+
+#Simulation
+#========================================
+vsim -t 100ps work.testbench
+
+add wave -divider "Top level FPGA"
+add wave -label "reset" -color "yellow" /uut/p3m(0)
+add wave -label "clk" -color "orange" /uut/smclk
+add wave -label "DQ" /uut/x(0)
+
+add wave -divider "SPI"
+add wave -label "CLK" /uut/spi_clk
+add wave -label "CS" /uut/spi_cs
+add wave -label "DI" /uut/spi_di
+add wave -label "DO" /uut/spi_do
+
+add wave -divider "SPI controller"
+add wave -label "CS" /uut/ispi_cs
+add wave -label "DI" /uut/ispi_di
+add wave -label "DI req" /uut/ispi_di_req
+add wave -label "DO" /uut/ispi_do
+add wave -label "DO vld" /uut/ispi_do_vld
+#add wave /uut/spictrl/*
+
+add wave -divider "1-wire"
+add wave /uut/fpga_inst/onew/*
+
+#add wave -divider "spidecds"
+#add wave /uut/fpga_inst/spidecds/*
+
+add wave -divider "FPGA arch"
+add wave /uut/fpga_inst/*
+
+#exec "vmake" ">makefile.vhdl"
+
+run 5 ms
+
+wave zoomfull

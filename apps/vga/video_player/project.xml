@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project outputprefix="ide">
+
+    <!--  Project description -->
+    <name>Přehrávač videí</name>
+    <category>IDE</category>
+    <author>Stanislav Sigmund</author>
+    <authoremail>xsigmu02@fit.vutbr.cz</authoremail>
+    <revision>20092205</revision>
+    <description>Aplikace umožňující přehrávání video sekvencí uložených na pevném disku nebo paměťové kartě Compact Flash.</description>
+
+    <!--  MCU part -->
+    <mcu>
+	<include>mcu/libs/ide/package.xml</include>
+        <file>main.c</file>
+    </mcu>
+
+    <!-- FPGA part -->
+    <fpga dcmfrequency="50MHz" architecture="ide">
+        <include>fpga/ctrls/ide//package_dmach.xml</include>
+        <include>fpga/ctrls/vga/package.xml</include>
+        <include>fpga/ctrls/sdram/package.xml</include>
+        <include>fpga/ctrls/keyboard/package.xml</include>
+        <file>top_level.vhd</file>
+    </fpga>
+
+</project>

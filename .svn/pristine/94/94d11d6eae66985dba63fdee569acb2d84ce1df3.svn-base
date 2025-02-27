@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project outputprefix="ps2">
+
+    <!--  Project description -->
+    <name>Komunikace s PS/2 periferiemi</name>
+    <author>Zdeněk Vašíček</author>
+    <authoremail>vasicek@fit.vutbr.cz </authoremail>
+    <revision>20090201</revision>
+    <description>Obsluha PS/2 klávesnice, PS/2 myši připojené ke konektoru JP3</description>
+
+    <!--  MCU part -->
+    <mcu>
+        <include>mcu/libs/irq/package.xml</include>
+        <file>main.c</file>
+    </mcu>
+
+    <!-- FPGA part -->
+    <fpga architecture="pc">
+        <include>fpga/ctrls/irq/package.xml</include>
+        <include>fpga/ctrls/ps2/package.xml</include>
+        <file>top_level.vhd</file>
+    </fpga>
+
+</project>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package>
+
+    <!--  Package description -->
+    <name>Top-level entita tlv_ide_ifc</name>
+    <author>Stanislav Sigmund</author>
+    <revision>20092205</revision>
+    <description>Entita umožňující používání celého portu či jen jeho části a zbývajících periferií</description>
+
+    <!--  VHDL files -->
+    <fpga>
+       <include>../../units/clkgen/package.xml</include>
+       <include>../../ctrls/spi/package.xml</include>
+       <file>../fpga_xc3s50.vhd</file>
+       <file>arch_ide_ifc.vhd</file>
+       <file>tlv_ide_ifc.vhd</file>
+    </fpga>
+ 
+</package>
