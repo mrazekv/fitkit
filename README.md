@@ -9,7 +9,7 @@ Chcete-li si připomenout šťastné i chmurné okamžiky spojené s touto unik�
 1. [Bázové designy](trunk/fpga/) umožňující např ovládání VGA výstupu a podobně
 1. [Starou kostru projektu do IVH](ivh-proj) - ovládání výstupu. To by pro vás mohl být startovací bod pro tvorbu vlastního HW pokud fitkit máte.
 
-Není zde pro kompilování kódu pro MCU - měl by se použít kompilátor  msp430-gcc (je k dispozici pro ubuntu).
+Není zde pro kompilování kódu pro MCU - měl by se použít kompilátor  msp430-gcc (je k dispozici pro ubuntu). Některé projekty jsou už s buildem a je možné se na ně podívat, např. [trunk/apps/games/pexeso/build]([trunk/apps/games/pexeso/build]).
 
 ## Co byl FITkit
 Fakulta informačních technologií (FIT) Vysokého učení technického v Brně je, na rozdíl od univerzitně zaměřených fakult, technicky orientovanou školou. Je zřejmé, že výuka technických kurzů musí být směrována jak teoreticky, tak prakticky. Cílem nasazení platformy FITkit do výuky na FIT je umožnit studentům, aby mohli navrhovat a prakticky realizovat nejen softwarové, ale také hardwarové projekty či dokonce celé aplikace.
